@@ -1,38 +1,284 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="$FLUTTER_BASE_HREF">
-
   <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Vayover">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>Vayover</title>
-  <link rel="manifest" href="manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vayover - Voice-based Anonymous Conversations</title>
+  <meta name="description" content="Anonymous voice conversations with strangers. Vent, laugh, open up - no names, no judgement.">
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <script src="flutter_bootstrap.js" async></script>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="/" class="nav-brand">
+        <img src="assets/logo.png" alt="Vayover">
+        <span>Vayover</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero with background image -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="assets/images/hero-bg.jpg" alt="" loading="eager">
+    </div>
+    <div class="container hero-content">
+      <img src="assets/icon.png" alt="Vayover" class="hero-icon">
+      <h1 class="fade-up">Two Voices Meet Anonymously.<br>No Names. No Filters. No Holding Back.</h1>
+      <p class="fade-up delay-1">Speak your heart to a stranger who'll never know who you are. Anonymous, temporary voice conversations with strangers - vent, laugh, open up, and disconnect. No pressure, no history, no judgement.</p>
+      <div class="hero-buttons fade-up delay-2">
+        <a href="#" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+          App Store
+        </a>
+        <a href="#" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.802 8.99l-2.303 2.303-8.635-8.636z"/></svg>
+          Google Play
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy with side image -->
+  <section class="philosophy">
+    <div class="container philosophy-layout">
+      <div class="philosophy-image scroll-reveal">
+        <img src="assets/images/airplane-window.jpg" alt="Airplane window view">
+      </div>
+      <div class="philosophy-content scroll-reveal">
+        <h2>The stranger on the plane.</h2>
+        <p>You know that feeling - sitting next to someone on a flight, and suddenly you're telling them things you've never told anyone. They don't know your name. You don't know theirs. You'll never meet again. And somehow, that's exactly what makes it real.</p>
+        <p><strong>That's Vayover.</strong></p>
+        <p>No performative texting. No curated profiles. No pressure to be interesting. Just your raw voice - the laugh, the hesitation, the sigh, the excitement - talking to someone who has no idea who you are, from the other side of the world.</p>
+        <p class="philosophy-highlight">Vent without judgement. Connect without consequences. Be heard without being seen.</p>
+        <p>Texts hide emotion. Video demands performance. But your voice? Your voice carries everything - the weight, the warmth, the honesty that no emoji can fake.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="how-it-works">
+    <div class="container">
+      <h2 class="scroll-reveal">How It Works</h2>
+      <div class="steps">
+        <div class="step scroll-reveal">
+          <div class="step-number">1</div>
+          <h3>Join Anonymously</h3>
+          <p>Sign up with just your phone number. No photos, no bios, no social media links.</p>
+        </div>
+        <div class="step-connector scroll-reveal"></div>
+        <div class="step scroll-reveal">
+          <div class="step-number">2</div>
+          <h3>Get Matched</h3>
+          <p>Paired with someone who shares your interests and wants a real, meaningful conversation.</p>
+        </div>
+        <div class="step-connector scroll-reveal"></div>
+        <div class="step scroll-reveal">
+          <div class="step-number">3</div>
+          <h3>Talk Freely</h3>
+          <p>Exchange voice notes back and forth. Be yourself - nobody knows who you are.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual break - full width image -->
+  <section class="image-break">
+    <img src="assets/images/night-sky.jpg" alt="Night sky">
+    <div class="image-break-overlay">
+      <p class="scroll-reveal">"Sometimes the best conversations happen with people you'll never see again."</p>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="container">
+      <h2 class="scroll-reveal">Why Vayover?</h2>
+      <div class="features-grid">
+        <div class="feature-card scroll-reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg></div>
+          <h3>Voice Only</h3>
+          <p>No typing, no selfies. Express yourself naturally through voice notes in real conversations.</p>
+        </div>
+        <div class="feature-card scroll-reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <h3>Global Matching</h3>
+          <p>Get matched with people from around the world. Discover cultures and perspectives through conversation.</p>
+        </div>
+        <div class="feature-card scroll-reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><line x1="2" y1="2" x2="22" y2="22"/></svg></div>
+          <h3>Fully Anonymous</h3>
+          <p>No profile photos, no real names. Your identity stays private - only your voice tells your story.</p>
+        </div>
+        <div class="feature-card scroll-reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+          <h3>Safe Community</h3>
+          <p>Zero tolerance for misbehavior. We permanently ban users who break the rules - no second chances.</p>
+        </div>
+        <div class="feature-card scroll-reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+          <h3>Daily Streaks & Achievements</h3>
+          <p>Stay consistent, earn rewards. Build streaks, unlock achievements, and level up your avatar.</p>
+        </div>
+        <div class="feature-card scroll-reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          <h3>No Algorithms, No Ads</h3>
+          <p>We don't sell your attention. No endless scrolling, no algorithmic manipulation - just real human connection.</p>
+        </div>
+        <div class="feature-card scroll-reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <h3>Timed Sessions</h3>
+          <p>Conversations have structure. Limited sessions per day means every match feels intentional, not disposable.</p>
+        </div>
+        <div class="feature-card scroll-reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1.08-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09a1.65 1.65 0 0 0 1.51-1.08 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1.08 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1.08z"/></svg></div>
+          <h3>Custom Avatars</h3>
+          <p>Express your personality through customizable avatars. Unlock new styles and accessories with coins.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats / Social Proof -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat scroll-reveal">
+          <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Countries Connected</span>
+        </div>
+        <div class="stat scroll-reveal">
+          <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Anonymous</span>
+        </div>
+        <div class="stat scroll-reveal">
+          <span class="stat-number" data-target="0">0</span><span class="stat-suffix"></span>
+          <span class="stat-label">Tolerance for Abuse</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Safety Banner -->
+  <section class="safety-banner">
+    <div class="container">
+      <h2 class="scroll-reveal">Zero Tolerance. Clean Community.</h2>
+      <p class="safety-lead scroll-reveal">We don't just moderate - we actively clean house. Users who harass, spam, or make others uncomfortable are <strong>permanently banned</strong>, no exceptions.</p>
+      <div class="safety-points">
+        <div class="safety-point scroll-reveal">
+          <span class="safety-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg></span>
+          <div>
+            <h4>Permanent Bans</h4>
+            <p>Rule-breakers are banned permanently - from their account and their device. We're proud of it.</p>
+          </div>
+        </div>
+        <div class="safety-point scroll-reveal">
+          <span class="safety-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg></span>
+          <div>
+            <h4>Report Anything</h4>
+            <p>If something feels off, report it. We encourage reporting and review every single case - your reports make the community better.</p>
+          </div>
+        </div>
+        <div class="safety-point scroll-reveal">
+          <span class="safety-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></span>
+          <div>
+            <h4>AI + Human Review</h4>
+            <p>Every report is analyzed by AI and reviewed by real moderators. We act fast and we act decisively.</p>
+          </div>
+        </div>
+        <div class="safety-point scroll-reveal">
+          <span class="safety-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5C7 4 7 7 7 7"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5C17 4 17 7 17 7"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></span>
+          <div>
+            <h4>Community Guardians</h4>
+            <p>Users who help keep the community safe earn rewards. Your reports contribute to a better experience for everyone.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA with background -->
+  <section class="cta-section">
+    <div class="cta-bg">
+      <img src="assets/images/mountains.jpg" alt="">
+    </div>
+    <div class="container cta-content">
+      <h2 class="scroll-reveal">Ready to Talk?</h2>
+      <p class="scroll-reveal">Someone out there wants to listen. Download Vayover and start a conversation you'll never forget.</p>
+      <div class="hero-buttons scroll-reveal">
+        <a href="#" class="btn btn-light">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+          App Store
+        </a>
+        <a href="#" class="btn btn-light">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.802 8.99l-2.303 2.303-8.635-8.636z"/></svg>
+          Google Play
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Vayover. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll reveal animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+
+    // Counter animation for stats
+    const countObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseInt(el.dataset.target);
+          let current = 0;
+          const increment = Math.max(1, Math.floor(target / 40));
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              current = target;
+              clearInterval(timer);
+            }
+            el.textContent = current;
+          }, 30);
+          countObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.stat-number').forEach(el => countObserver.observe(el));
+
+    // Parallax effect on hero background
+    window.addEventListener('scroll', () => {
+      const hero = document.querySelector('.hero-bg img');
+      if (hero) {
+        const scrolled = window.pageYOffset;
+        hero.style.transform = `translateY(${scrolled * 0.3}px)`;
+      }
+    });
+
+  </script>
+
 </body>
 </html>
