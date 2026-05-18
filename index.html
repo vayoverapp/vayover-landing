@@ -1,25 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vayover — Anonymous Voice Conversations</title>
-    <style>
-        body { font-family: -apple-system, sans-serif; max-width: 600px; margin: 80px auto; padding: 0 20px; text-align: center; color: #333; }
-        h1 { font-size: 2.5em; margin-bottom: 0.2em; }
-        .tagline { font-size: 1.2em; color: #666; margin-bottom: 2em; }
-        .links { margin-top: 3em; }
-        .links a { color: #666; margin: 0 1em; text-decoration: none; }
-        .links a:hover { text-decoration: underline; }
-    </style>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Vayover">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Vayover</title>
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <h1>Vayover</h1>
-    <p class="tagline">Anonymous voice conversations that matter.</p>
-    <p>Coming soon to iOS and Android.</p>
-    <div class="links">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-    </div>
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
